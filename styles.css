@@ -1,0 +1,111 @@
+/* Columna lateral */
+.sidebar {
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background-color: #343a40;
+    color: #141414;
+    padding-top: 20px;
+    width: 250px; /* Ancho de la columna */
+    transition: width 0.3s; /* Transición de ancho al expandir/cerrar */
+}
+
+.sidebar h2 {
+    color: #880f0f;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #1651cf;
+    transition: color 0.3s;
+    display: block;
+    padding: 10px 20px;
+}
+
+.sidebar a:hover {
+    color: #007bff;
+}
+
+/* Al expandir el enlace */
+.sidebar a.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Contenido principal al expandir la columna */
+.main-content {
+    margin-top: 20px;
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+}
+
+/* Al expandir la columna, ajusta el tamaño de la imagen */
+.sidebar.expanded {
+    width: 350px;
+}
+
+.sidebar.expanded a {
+    padding: 10px 30px;
+}
+
+/* Artículos */
+article {
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+article h2 {
+    color: #007bff;
+}
+
+article p {
+    color: #555555;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Enlaces a redes sociales */
+.social-icon {
+    width: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Enlaces a redes sociales */
+.social-icon {
+    width: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    display: inline-block; /* Alinea las imágenes en línea recta */
+}
+
+.social-icon:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último ícono para evitar espacio adicional */
+}
+
+/* GitHub */
+.social-icon.github {
+    margin-top: 10px; /* Añade espacio superior para separar GitHub de los demás íconos */
+}
+
+/* Hover */
+.social-icon:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Programación</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Blog de Programación</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#xml-section">XML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#json-section">JSON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h2>Categorías</h2>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/xml/" target="_blank">XML - W3Schools</a></li>
+                        <li><a href="https://www.json.org/" target="_blank">JSON - JSON.org</a></li>
+                        <li><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
+                    </ul>
+                    <h2>Últimos Posts</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/xml/" target="_blank">
+                                Últimas noticias XML - W3Schools
+                            </a>
+                            <p>Descubre las últimas novedades en XML y las mejores prácticas.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.json.org/" target="_blank">
+                                Novedades en JSON - JSON.org
+                            </a>
+                            <p>Actualizaciones y cambios recientes en el formato JSON.</p>
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                                Últimas actualizaciones HTML - MDN Web Docs
+                            </a>
+                            <p>Conoce las novedades en HTML según la documentación de MDN Web Docs.</p>
+                        </li>
+                    </ul>
+                    <h2>Síguenos en Redes Sociales</h2>
+                    <a href="https://twitter.com/TuUsuarioDeTwitter" target="_blank" title="Twitter">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/220px-Logo_of_Twitter.svg.png" alt="Twitter" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/TuUsuarioDeLinkedIn" target="_blank" title="LinkedIn">
+                        <img src="https://store-images.s-microsoft.com/image/apps.31120.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.bc4172bd-63f0-455a-9acd-5457f44e4473" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://www.facebook.com/TuUsuarioDeFacebook" target="_blank" title="Facebook">
+                        <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook" class="social-icon">
+                    </a>
+                </div>
+            </div>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                    <h1 class="h2">Blog de Programación</h1>
+                </div>
+
+                
+                <article>
+                    <h2>XML en Programación</h2>
+                    <p>
+                        XML (Extensible Markup Language) es un estándar que define reglas para codificar documentos en un formato que
+                        es tanto legible para humanos como comprensible para las máquinas. Utiliza etiquetas anidadas para estructurar
+                        la información de manera jerárquica.
+                    </p>
+                    <img src="https://www.w3schools.com/xml/nodetree.gif" alt="XML Structure">
+                    <p>
+                        Las etiquetas XML, como `<elemento>` y `</elemento>`, permiten organizar la información en una estructura
+                        coherente. Este lenguaje se utiliza ampliamente en la transmisión y almacenamiento de datos, así como en la
+                        configuración de archivos y en la representación de información estructurada en la web.
+                    </p>
+                    <p>
+                        XML tiene la ventaja de ser extensible y compatible con una amplia variedad de aplicaciones y sistemas.
+                        Proporciona una forma clara y legible de representar datos complejos.
+                    </p>
+                    <img src="https://www.researchgate.net/publication/228685162/figure/fig2/AS:301870175277057@1448982866513/Ejemplo-de-documento-XML.png" alt="XML Example">
+                    <p>
+                        El ejemplo muestra un fragmento de un documento XML que describe información sobre libros. Cada libro tiene
+                        un título, un autor y un año de publicación.
+                    </p>
+                    <p>
+                        En resumen, XML es una herramienta poderosa para estructurar datos y facilita la interoperabilidad entre
+                        sistemas heterogéneos.
+                    </p>
+                </article>
+
+                <!-- Artículo de JSON -->
+                <article>
+                    <h2>JSON en Programación</h2>
+                    <p>
+                        JSON (JavaScript Object Notation) es un formato de intercambio de datos ligero y fácil de leer. Se basa en una
+                        sintaxis de pares clave-valor y se utiliza comúnmente para transmitir datos entre un servidor y una aplicación
+                        web, así como para la configuración y almacenamiento de datos.
+                    </p>
+                    <img src="https://www.json.org/img/value.png" alt="JSON Syntax">
+                    <p>
+                        La estructura básica de JSON implica objetos delimitados por llaves `{}`, y cada objeto puede contener pares
+                        clave-valor. Los arrays se representan con corchetes `[]` y permiten almacenar listas de valores.
+                    </p>
+                    <p>
+                        JSON es una elección popular debido a su simplicidad y fácil interpretación en diversos entornos de
+                        programación. Es especialmente efectivo en aplicaciones web y servicios que requieren la transmisión eficiente
+                        de datos.
+                    </p>
+                    <img src="https://asanzdiego.github.io/curso-nivelacion-bigdata-2017/recursos/slides/img/json/json-01.png" alt="JSON Example">
+                    <p>
+                        En el ejemplo, se muestra un objeto JSON que describe información sobre usuarios. Cada usuario tiene un
+                        nombre, una edad y una lista de intereses.
+                    </p>
+                    <p>
+                        JSON permite representar datos más complejos mediante la anidación de objetos y arrays. Esto facilita la
+                        organización de información estructurada de manera clara y eficiente.
+                    </p>
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210708215250/nestedjsonex.png" alt="JSON Complex Example">
+                    <p>
+                        En situaciones donde se requiere intercambio de datos entre diferentes plataformas, JSON se destaca por su
+                        capacidad de representar información de manera universal, ya que es independiente del lenguaje.
+                    </p>
+                    <p>
+                        Su uso se extiende a configuraciones de aplicaciones, intercambio de datos en servicios web, y es comúnmente
+                        empleado en conjunto con tecnologías como AJAX para la transmisión asíncrona de datos en aplicaciones web
+                        modernas.
+                    </p>
+                    <img src="https://i.stack.imgur.com/cb780.png" alt="JSON AJAX Example">
+                    <p>
+                        En resumen, JSON es una herramienta esencial en el desarrollo de software moderno, permitiendo la transmisión y
+                        almacenamiento eficiente de datos, y facilitando la interoperabilidad entre sistemas diversos.
+                    </p>
+                </article>
+            </main>
+        </div>
+    </div>
+    <div class="row">
+
+
+
+    <!-- Enlaces a Bootstrap JS y dependencias de Popper.js y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
